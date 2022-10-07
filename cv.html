@@ -2,19 +2,114 @@
 
 <head>
     <title>CV</title>
+    <meta charset="utf-8">
     <!-- import bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- import font awesome -->
     <script src="https://kit.fontawesome.com/68fc273f7b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgba(245, 245, 245, 0.85);
+        }
+    
+        .top-bar {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            width: 33%;
+            margin: 0 auto;
+        }
+    
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        .right-container {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    
+        .title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    
+        #education-item-title-text .project-item-title {
+            font-size: 100px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .education-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        .profil {
+            width: auto;
+            height: 200px;
+        }
+
+        .span-title {
+            font-size: 1.25em;
+            font-weight: bold; 
+            text-decoration: underline;
+        }
+    
+    </style>
+    
 </head>
 
 <body>
     <div class="top-bar">
-        <img src="images/profil.png" alt="profil" class="profil">
+        <img src="avatar.png" alt="profil" class="profil">
         <div class="name">Taha <b>BELKHIRI</b></div>
-        <div class="job">Étudiant ingénieur en informatique (Réseaux et Sécurité informatique) à la recherche d'un stage de 6 mois à partir d'Avril 2022.</div>
+        <div class="job">Étudiant ingénieur en informatique à la recherche d'un stage de 6 mois à partir d'Avril 2022.</div>
     </div>
 
     <div class="main-container container">
@@ -55,22 +150,6 @@
                 </div>
             </div>
 
-            <div class="hobbies card">
-                <div class="code">
-                    <i class="fa-solid fa-code"></i>
-                    <p>Programmation</p>
-                </div>
-
-                <div class="football">
-                    <i class="fa-solid fa-futbol"></i>
-                    <p>Football</p>
-                </div>
-
-                <div class="travel">
-                    <i class="fa-solid fa-plane"></i>
-                    <p>Voyages</p>
-                </div>
-            </div>
 
             <div class="competences card">
                 <div class="languages">
@@ -97,6 +176,25 @@
                 </div>
             </div>
 
+
+            <div class="hobbies card">
+                <h2 class="title">Centres d'intérêts</h2>
+                <div class="code">
+                    <i class="fa-solid fa-code"></i>
+                    <p>Programmation</p>
+                </div>
+
+                <div class="football">
+                    <i class="fa-solid fa-futbol"></i>
+                    <p>Football</p>
+                </div>
+
+                <div class="travel">
+                    <i class="fa-solid fa-plane"></i>
+                    <p>Voyages</p>
+                </div>
+            </div>
+
         </div>
 
         <div class="right-container col-md-8">
@@ -104,24 +202,24 @@
             <div class="education card">
                 <h2 class="title">Éducation</h2>
                 <div class="education-item">
-                    <div class="education-item-title">Ingénieur en informatique</div>
-                    <div class="education-item-subtitle">ISIMA (Institut Supérieur d'Informatique, de Modélisation et de leurs Applications)</div>
+                    <div class="education-item-title"><span class="span-title">Grande école d'Ingénieurs en Informatique</span></div>
+                    <div class="education-item-subtitle">ISIMA (Institut Supérieur d'Informatique, de Modélisation et de leurs Applications), Clermont-Ferrand</div>
                     <div class="education-item-date">2021 - 2024</div>
-                    <div class="education-item-description">Spécialité : Réseaux et Sécurité informatique</div>
+                    <div class="education-item-description">Fillière : Réseaux et Sécurité informatique</div>
                 </div>
 
                 <div class="education-item">
-                    <div class="education-item-title">Classes Préparatoires aux Grandes Écoles</div>
+                    <div class="education-item-title"><span class="span-title">Classes Préparatoires aux Grandes Écoles</span></div>
                     <div class="education-item-subtitle">Lycée Ibn Ghazi, Rabat</div>
                     <div class="education-item-date">2018 - 2021</div>
-                    <div class="education-item-description">Spécialité : Mathématiques-Physique</div>
+                    <div class="education-item-description">Fillière : Mathématiques-Physique</div>
                 </div>
 
                 <div class="education-item">
-                    <div class="education-item-title">Baccalauréat scientifique</div>
+                    <div class="education-item-title"><span class="span-title">Baccalauréat scientifique</span></div>
                     <div class="education-item-subtitle">École Belbachir, Rabat</div>
                     <div class="education-item-subtitle">Mention: Très Bien</div>
-                    <div class="education-item-description">Spécialité : Physique-Chimie</div>
+                    <div class="education-item-description">Fillière : Physique-Chimie</div>
                 </div>
             </div>
 
@@ -129,7 +227,7 @@
             <div class="projects card">
                 <h2 class="title">Projets</h2>
                 <div class="project-item">
-                    <div class="project-item-title">Projet de 1ère année</div>
+                    <div class="project-item-title"><span class="span-title">Projet de 1ère année</span></div>
                     <div class="project-item-subtitle">ISIMA</div>
                     <div class="project-item-date">2021</div>
                     <div class="project-item-description">
@@ -141,13 +239,13 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-item-title">Projet personnel</div>
+                    <div class="project-item-title"><span class="span-title">Projet personnel</span></div>
                     <div class="project-item-date">2021</div>
                     <div class="project-item-description">Développement d'un bot qui crée du contenu pour des réseaux sociaux</div>
                 </div>
 
                 <div class="project-item">
-                    <div class="project-item-title">TIPE (Travail d'Initiative Personnelle Encadré)</div>
+                    <div class="project-item-title"><span class="span-title">TIPE (Travail d'Initiative Personnelle Encadré)</span></div>
                     <div class="project-item-subtitle">CPGE</div>
                     <div class="project-item-date">2021</div>
                     <div class="project-item-description">Développement d'une programme qui automatise la vérification des faits</div>
